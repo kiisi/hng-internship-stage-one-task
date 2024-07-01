@@ -9,11 +9,12 @@
 a,
 a:visited,
 a:link {
-    color: white;
+  color: white;
+  text-decoration: none;
 }
 
-a:hover{
-    color: #9747FF;
+a:hover {
+  color: #9747ff;
 }
 
 html {
@@ -50,10 +51,10 @@ html {
 }
 
 @media screen and (max-width: 625px) {
-    .title {
-      font-size: 24px;
-    }
+  .title {
+    font-size: 24px;
   }
+}
 
 /* NAVBAR */
 
@@ -73,7 +74,91 @@ html {
 }
 
 .navbar i {
-    font-size: 24px;
+  font-size: 24px;
+}
+
+/* SECTION FOR PROFILE */
+
+.section__profile {
+  background: linear-gradient(107.08deg, #190d2e 0.54%, #020103 99.46%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 76px 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 1240px) {
+  .section__profile {
+    padding: 32px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__profile {
+    padding: 32px 12px;
+  }
+}
+
+.section__profile > figure {
+  margin-bottom: 20px;
+}
+
+.section__profile--info {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #000000;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 6px;
+}
+
+.section__profile--info > div {
+  border: 1px solid #ffffff26;
+  border-radius: 6px;
+  padding: 12px 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .section__profile--info {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .section__profile--info > div {
+        border-radius: 3px;
+        padding: 8px 12px;
+      }
+}
+
+.section__profile--info > div:hover {
+    border: 1px solid #9747ff;
+}
+
+.section__profile--info > div:hover h5 {
+    color: whitesmoke;
+}
+
+.section__profile--info > div:hover p, .section__profile--info > div:hover a {
+    color: #9747ff;
+}
+
+.section__profile--info h5 {
+  color: #adb5c2;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section__profile--info p {
+  color: white;
+  font-size: 16px;
 }
 
 /* SECTION FOR GOALS */
@@ -128,8 +213,8 @@ html {
 }
 
 .section__goals > article h2 > div {
-    padding-top: 2px;
-  }
+  padding-top: 2px;
+}
 
 .section__goals > article h2 svg {
   flex-shrink: 0;
@@ -153,36 +238,36 @@ html {
 }
 
 footer > .box {
-    padding-top: 60px;
-    padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 footer header {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .footer__links {
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 6px;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .footer__links > a {
-    border: 1px solid #FFFFFF26;
-    border-radius: 6px;
-    padding: 12px 18px;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 14px;
-    flex: 1;
-    text-align: center;
+  border: 1px solid #ffffff26;
+  border-radius: 6px;
+  padding: 12px 18px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  flex: 1;
+  text-align: center;
 }
 
-.footer__links > a:hover{
-    border: 1px solid #9747FF;
+.footer__links > a:hover {
+  border: 1px solid #9747ff;
 }

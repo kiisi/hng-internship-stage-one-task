@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-
     <nav class="navbar box">
       <a href="https://hng11.slack.com/team/U07A54721BL" target="_blank">
         <i class="fa-brands fa-slack"></i>
@@ -27,6 +26,36 @@
         <i class="fa-brands fa-github"></i>
       </a>
     </nav>
+
+    <div class="container">
+      <section class="section__profile box">
+        <figure>
+          <img src="/images/kiisi-pics.jpg" alt="Destiny Felix Kiisi" />
+        </figure>
+        <div class="section__profile--info">
+          <div>
+            <h5>Slack Name</h5>
+            <p data-testid="slackDisplayName">Destiny Felix Kiisi</p>
+          </div>
+          <div>
+            <h5>Current Time in UTC</h5>
+            <p data-testid="currentTimeUTC" id="currentTimeUTC">...</p>
+          </div>
+          <div>
+            <h5>Current Day of the week</h5>
+            <p data-testid="currentDay" id="currentDay">...</p>
+          </div>
+          <div>
+            <h5>Slack Email</h5>
+            <p>
+              <a data-testid="slackEmail" href="mailto:kiisifelix06@gmail.com"
+                >kiisifelix06@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <div class="container">
       <section class="section__goals box">
@@ -244,24 +273,63 @@
           <h3>HNG reference links 🔥</h3>
         </header>
         <div class="footer__links">
-          <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink">
+          <a
+            href="https://hng.tech/learn"
+            target="_blank"
+            data-testid="hngLink"
+          >
             hng.tech/learn
           </a>
-          <a href="https://keyword.dog" target="_blank" data-testid="keywordLink">
+          <a
+            href="https://keyword.dog"
+            target="_blank"
+            data-testid="keywordLink"
+          >
             keyword.dog
           </a>
-          <a href="https://scrapeanyweb.site" target="_blank" testid="scrapeanywebLink">
+          <a
+            href="https://scrapeanyweb.site"
+            target="_blank"
+            testid="scrapeanywebLink"
+          >
             scrapeanyweb.site
           </a>
         </div>
       </div>
     </footer>
 
-    <!-- Do your styling as well -->
-    <!-- <section className="hng-links">
-    <a href="https://hng.tech/learn" data-testid="hngLink">hng.tech/learn</a>
-    <a href="https://keyword.dog" data-testid="keywordLink">keyword.dog</a>
-    <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">scrapeanyweb.site</a>
-  </section> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function updateUTCTime() {
+          const now = new Date();
+          const utcTime = now.toUTCString();
+          document.getElementById("currentTimeUTC").textContent = utcTime;
+        }
+
+        // Update the time every second
+        setInterval(updateUTCTime, 1000);
+
+        // Set the initial time
+        updateUTCTime();
+
+        function updateWeekday() {
+          const now = new Date();
+          const weekdays = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+          ];
+          const currentWeekday = weekdays[now.getUTCDay()];
+          document.getElementById("currentDay").textContent = currentWeekday;
+        }
+
+        // Set the initial weekday
+        updateWeekday();
+      });
+    </script>
   </body>
 </html>
