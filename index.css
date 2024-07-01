@@ -127,6 +127,10 @@ html {
   gap: 8px;
 }
 
+.section__goals > article h2 > div {
+    padding-top: 2px;
+  }
+
 .section__goals > article h2 svg {
   flex-shrink: 0;
 }
