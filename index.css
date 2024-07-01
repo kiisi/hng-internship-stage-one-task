@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:link {
+    color: white;
+}
+
+a:hover{
+    color: #9747FF;
+}
+
+html {
+  font-family: Inter, "sans-serif";
+  background-color: #000000;
+}
+
+.container {
+  padding: 0px 12px;
+}
+
+@media screen and (max-width: 1240px) {
+  .container {
+    padding: 0px 6px;
+  }
+}
+
+.box {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 38px;
+  color: white;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+    .title {
+      font-size: 24px;
+    }
+  }
+
+/* NAVBAR */
+
+.navbar {
+  z-index: 999;
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: black;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar i {
+    font-size: 24px;
+}
+
+/* SECTION FOR GOALS */
+
+.section__goals {
+  background: linear-gradient(107.08deg, #190d2e 0.54%, #020103 99.46%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 76px 50px;
+}
+
+@media screen and (max-width: 1240px) {
+  .section__goals {
+    padding: 32px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__goals {
+    padding: 32px 12px;
+  }
+}
+
+.section__goals > header {
+  margin-bottom: 40px;
+}
+
+.section__goals > article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+@media screen and (max-width: 1240px) {
+  .section__goals > article {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__goals > article {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section__goals > article h2 {
+  font-weight: 500;
+  color: white;
+  margin-bottom: 16px;
+  font-size: 18px;
+  display: flex;
+  gap: 8px;
+}
+
+.section__goals > article h2 svg {
+  flex-shrink: 0;
+}
+
+.section__goals > article p {
+  color: #ffffffb2;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .section__goals > article h2 {
+    font-size: 16px;
+  }
+
+  .section__goals > article p {
+    color: #ffffffb2;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+footer > .box {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+footer header {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer__links {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.footer__links > a {
+    border: 1px solid #FFFFFF26;
+    border-radius: 6px;
+    padding: 12px 18px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    flex: 1;
+    text-align: center;
+}
+
+.footer__links > a:hover{
+    border: 1px solid #9747FF;
+}
