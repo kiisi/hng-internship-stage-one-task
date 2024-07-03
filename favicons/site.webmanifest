@@ -1,6 +1,8 @@
 {
   "name": "Destiny Felix Kiisi",
   "short_name": "Kiisi",
+  "start_url": "/",
+  "description": "A User-Centric Frontend Developer: Crafting Intuitive Experiences",
   "icons": [
     {
       "src": "./android-chrome-192x192.png",
