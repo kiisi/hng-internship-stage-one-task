@@ -15,6 +15,14 @@
       "type": "image/png"
     }
   ],
+  "screenshots": [
+    {
+      "src": "./kiisi-hng-task.png",
+      "sizes": "1345x624",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
