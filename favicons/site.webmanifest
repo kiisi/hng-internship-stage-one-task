@@ -17,6 +17,11 @@
   ],
   "screenshots": [
     {
+      "src": "./kiisi-hng-task-mobile.jpg",
+      "sizes": "720x1600",
+      "type": "image/jpg"
+    },
+    {
       "src": "./kiisi-hng-task.png",
       "sizes": "1345x624",
       "type": "image/png",
